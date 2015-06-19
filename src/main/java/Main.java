@@ -21,7 +21,10 @@ public class Main extends HttpServlet {
 
   private void showHome(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
-    resp.getWriter().print("Hello from Java!");
+	//test var
+	String autor = System.getenv().get("AUTOR");
+	
+    resp.getWriter().print("Hello " + (autor != null ? autor : "") + " from Java friendstrip!");
   }
 
   private void showDatabase(HttpServletRequest req, HttpServletResponse resp)
