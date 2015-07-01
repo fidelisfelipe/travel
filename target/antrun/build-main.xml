@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy file="D:\git\travel/pom-dist.xml" todir="D:\git\travel\target"/>
+  <replace file="D:\git\travel\target/pom-dist.xml" value="4.2.0-RC2-SNAPSHOT" token="VRAPTOR_VERSION_HERE"/>
+</target>
+</project>
